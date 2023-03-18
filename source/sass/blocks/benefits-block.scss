@@ -1,0 +1,36 @@
+.benefits-block {
+  width: 100%;
+  padding: 110px 0 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white-font;
+  background-image: url("../img/bg-benefits-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-benefits-desktop@2x.jpg");
+  }
+
+  h2 {
+    font-family: "Montserrat Semi Bold", "Arial", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+}
+
+.benefits-block__wrapper {
+  width: 84.9%;
+}
+
+.benefits-block__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}

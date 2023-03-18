@@ -1,0 +1,36 @@
+.description-block {
+  width: 100%;
+  padding: 115px 0 145px 0;
+}
+
+.description-block__wrapper {
+  width: 84.9%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description-block__text-wrapper {
+  width: 512px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h2 {
+    font-family: "Montserrat Semi Bold", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 20px;
+    color: $black-font;
+  }
+
+  p {
+    font-family: "Montserrat Regular", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black-font;
+  }
+}

@@ -1,0 +1,31 @@
+.main-navigation {
+}
+
+.main-navigation__list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+
+.main-navigation__link {
+  display: block;
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $white-font;
+
+  &:hover {
+    color: $grey-font
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: 2px solid $grey-font;
+    border-radius: 5px;
+  }
+}

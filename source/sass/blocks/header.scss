@@ -1,0 +1,16 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);;
+  width: 100vw;
+  padding: 35px 0;
+}
+
+.header__wrapper {
+  margin: 0 auto;
+  width: 84.9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,157 @@
+.product-card {
+  width: 260px;
+  max-height: 386px;
+  padding: 335px 30px 25px 30px;
+  background-color: $black-font;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-family: "Montserrat Medium", "Arial", sans-serif;
+    color: $white-font;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  h4 {
+    font-family: "Montserrat Medium", "Arial", sans-serif;
+    color: $white-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-family: "Montserrat Regular", "Arial", sans-serif;
+    color: $grey-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  a {
+    width: 100%;
+    background-color: $white-font;
+    color: $black-font;
+    padding: 10px 0;
+    font-family: "Montserrat Semi Bold", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: none;
+    margin-bottom: 12px;
+  }
+
+  &__wrapper:last-of-type {
+    margin-bottom: 25px;
+  }
+
+  a {
+    display: none;
+  }
+
+  a:hover {
+    background-color: $grey-font;
+  }
+
+  a:active {
+    opacity: 0.7;
+  }
+
+  a:focus {
+    outline: 2px solid blue;
+  }
+
+  &:hover > .product-card__wrapper {
+    display: block;
+  }
+
+  &:focus > .product-card__wrapper {
+    display: block;
+  }
+
+  &:hover, &:focus {
+    padding: 28px 25px;
+    background-image: none;
+
+    h3 {
+      margin-bottom: 14px;
+    }
+
+    & > a {
+      display: block;
+    }
+  }
+}
+
+.product-card--1 {
+  background-image: url("../img/card-1-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/card-1-desktop@2x.jpg");
+  }
+}
+
+.product-card--2 {
+  background-image: url("../img/card-1-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/card-1-desktop@2x.jpg");
+  }
+}
+
+.product-card--3 {
+  background-image: url("../img/card-3-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/card-3-desktop@2x.jpg");
+  }
+}
+
+.product-card--4 {
+  background-image: url("../img/card-4-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/card-4-desktop@2x.jpg");
+  }
+}
+
+.product-card--5 {
+  background-image: url("../img/card-5-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/card-5-desktop@2x.jpg");
+  }
+}
+
+.product-card--6 {
+  background-image: url("../img/card-6-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/card-6-desktop@2x.jpg");
+  }
+}
+
+.product-card--7 {
+  background-image: url("../img/card-7-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/card-7-desktop@2x.jpg");
+  }
+}
+
+.product-card--8 {
+  background-image: url("../img/card-8-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/card-8-desktop@2x.jpg");
+  }
+}

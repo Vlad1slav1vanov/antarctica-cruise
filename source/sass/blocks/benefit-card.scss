@@ -21,8 +21,42 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  @media (max-width: 1023px) {
+    width: 206px;
+    padding: 26px 0 21px 20px;
+
+    h3 {
+      &.benefit-card__title--3 {
+        margin-bottom: 20px;
+      }
+      line-height: 25px;
+    }
+
+    p.pre {
+      white-space: normal;
+    }
+  }
 }
 
 .benefit-card__icon {
   margin-bottom: 10px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 11px;
+    &--1 {
+      width: 21px;
+      height: 26px;
+    }
+
+    &--2 {
+      width: 27px;
+      height: 26px;
+    }
+
+    &--3 {
+      width: 36px;
+      height: 26px;
+    }
+  }
 }

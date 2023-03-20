@@ -9,10 +9,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-benefits-desktop@2x.jpg");
-  }
-
   h2 {
     font-family: "Montserrat Semi Bold", "Arial", sans-serif;
     text-align: center;
@@ -21,16 +17,35 @@
     line-height: 42px;
     margin-bottom: 50px;
   }
+
+  @media (max-width: 1023px) {
+    padding: 88px 0 100px 0;
+    background-image: url("../img/bg-benefits-tablet.jpg");
+
+    h2 {
+      font-size: 26px;
+      line-height: 39px;
+    }
+  }
 }
 
 .benefits-block__wrapper {
   width: 84.9%;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    padding: 0 45px;
+  }
 }
 
 .benefits-block__list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
+
+  @media (max-width: 1023px) {
+    gap: 30px;
+  }
 }

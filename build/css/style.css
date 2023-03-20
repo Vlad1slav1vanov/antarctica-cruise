@@ -437,6 +437,10 @@ body {
   min-height: 100vh;
 }
 
+.pre {
+  white-space: pre;
+}
+
 html {
   font-style: normal;
   font-weight: 400;
@@ -662,6 +666,7 @@ button,
 .header__wrapper {
   margin: 0 auto;
   width: 84.9%;
+  max-width: 1600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -739,6 +744,7 @@ button,
 .title-block__wrapper {
   width: 71%;
   margin: 0 auto;
+  max-width: 1160px;
 }
 
 .description-block {
@@ -752,12 +758,13 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 88px;
 }
 
 .description-block__text-wrapper {
@@ -830,9 +837,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -887,11 +894,17 @@ button,
 }
 
 .products-block__list {
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  -ms-grid-columns: 260px 260px 260px 260px;
+  grid-template-columns: 260px 260px 260px 260px;
   -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px;
@@ -899,7 +912,7 @@ button,
 
 .product-card {
   width: 260px;
-  max-height: 386px;
+  height: 386px;
   padding: 335px 30px 25px 30px;
   background-color: #011C40;
   background-repeat: no-repeat;
@@ -1045,9 +1058,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 144px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1067,6 +1081,7 @@ button,
 }
 
 .form-block__title-wrapper h2 {
+  width: 493px;
   font-family: "Montserrat Bold", "Arial", sans-serif;
   font-weight: 700;
   padding-top: 10px;
@@ -1086,6 +1101,7 @@ button,
 
 .feedback-form {
   width: 403px;
+  min-width: 403px;
   background-color: #011C40;
   padding: 42px 50px 50px 50px;
   display: -webkit-box;
@@ -1232,6 +1248,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -1305,6 +1324,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  max-width: 1600px;
 }
 
 .footer__main-logo {
@@ -1313,6 +1333,11 @@ button,
 
 .footer__socials {
   margin-left: auto;
+}
+
+.footer__main-navigation a {
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .socials__list {
@@ -2062,15 +2087,348 @@ button,
   }
 }
 
+@media (max-width: 1365px) {
+  .products-block__list {
+    -ms-grid-columns: 260px 260px 260px;
+    grid-template-columns: 260px 260px 260px;
+  }
+
+  .contacts-block__map {
+    width: 400px;
+  }
+
+  .contacts-block__map iframe {
+    width: 400px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
+  }
+
+  .header {
+    padding: 30px 45px;
+  }
+
+  .header__wrapper {
+    width: 100%;
+  }
+
+  .main-logo {
+    width: 38px;
+    height: 20px;
+  }
+
+  .main-navigation__list {
+    gap: 24px;
+  }
+
+  .main-navigation__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .title-block {
+    padding: 270px 0 275px 0;
+    background-image: url("../img/bg-main-tablet.jpg");
+  }
+
+  .title-block h1 {
+    font-size: 50px;
+    line-height: 60px;
+    text-shadow: none;
+  }
+
+  .title-block p {
+    text-shadow: none;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .title-block__wrapper {
+    width: 100%;
+    padding: 0 45px;
+  }
+
+  .description-block {
+    padding: 90px 0 95px 0;
+  }
+
+  .description-block__wrapper {
+    width: 100%;
+    padding: 0 45px;
+    gap: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .description-block__text-wrapper {
+    width: 324px;
+  }
+
+  .description-block__text-wrapper h2 {
+    font-size: 26px;
+    line-height: 36px;
+    width: 205px;
+    margin-bottom: 15px;
+  }
+
+  .description-block__text-wrapper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .description-block__picture {
+    margin-top: 10px;
+  }
+
+  .benefits-block {
+    padding: 88px 0 100px 0;
+    background-image: url("../img/bg-benefits-tablet.jpg");
+  }
+
+  .benefits-block h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .benefits-block__wrapper {
+    width: 100%;
+    padding: 0 45px;
+  }
+
+  .benefits-block__list {
+    gap: 30px;
+  }
+
+  .benefit-card {
+    width: 206px;
+    padding: 26px 0 21px 20px;
+  }
+
+  .benefit-card h3 {
+    line-height: 25px;
+  }
+
+  .benefit-card h3.benefit-card__title--3 {
+    margin-bottom: 20px;
+  }
+
+  .benefit-card p.pre {
+    white-space: normal;
+  }
+
+  .benefit-card__icon {
+    margin-bottom: 11px;
+  }
+
+  .benefit-card__icon--1 {
+    width: 21px;
+    height: 26px;
+  }
+
+  .benefit-card__icon--2 {
+    width: 27px;
+    height: 26px;
+  }
+
+  .benefit-card__icon--3 {
+    width: 36px;
+    height: 26px;
+  }
+
+  .products-block {
+    padding: 90px 0 100px 0;
+  }
+
+  .products-block h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .products-block__wrapper {
+    width: 100%;
+    padding: 0 60px;
+  }
+
+  .products-block__list {
+    -ms-grid-columns: 309px 309px;
+    grid-template-columns: 309px 309px;
+  }
+
+  .product-card {
+    width: 309px;
+    padding: 330px 35px 35px 35px;
+  }
+
+  .product-card:hover {
+    padding: 28px 35px 35px 35px;
+  }
+
+  .product-card--1 {
+    background-image: url("../img/card-1-tablet.jpg");
+  }
+
+  .product-card--2 {
+    background-image: url("../img/card-1-tablet.jpg");
+  }
+
+  .product-card--3 {
+    background-image: url("../img/card-3-tablet.jpg");
+  }
+
+  .product-card--4 {
+    background-image: url("../img/card-4-tablet.jpg");
+  }
+
+  .product-card--5 {
+    background-image: url("../img/card-5-tablet.jpg");
+  }
+
+  .product-card--6 {
+    background-image: url("../img/card-6-tablet.jpg");
+  }
+
+  .product-card--7 {
+    background-image: url("../img/card-7-tablet.jpg");
+  }
+
+  .product-card--8 {
+    background-image: url("../img/card-8-tablet.jpg");
+  }
+
+  .form-block {
+    background-image: url("../img/bg-form-tablet.jpg");
+    padding: 78px 0 100px 0;
+  }
+
+  .form-block__wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-block__title-wrapper h2 {
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .form-block__title-wrapper p {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    width: auto;
+    margin-top: -5px;
+    margin-bottom: 32px;
+  }
+
+  .contacts-block {
+    padding: 100px 45px;
+  }
+
+  .contacts-block__wrapper {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .contacts-block__map {
+    width: 324px;
+    height: 335px;
+  }
+
+  .contacts-block__map iframe {
+    width: 324px;
+    height: 335px;
+  }
+
+  .contacts-block__contacts p {
+    margin-bottom: 28px;
+  }
+
+  .contacts-block__list {
+    gap: 20px;
+  }
+
+  .contacts-block__contact-link {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .contacts-block__contact-link span {
+    display: block;
+    max-width: 255px;
+  }
+
+  .footer__wrapper {
+    width: 100%;
+    padding: 0 45px;
+  }
+
+  .footer__main-logo {
+    margin-right: 25px;
+  }
+
+  .socials__list {
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .socials__logo--ok {
+    width: 10px;
+    height: 16px;
+  }
+
+  .socials__logo--dzen,
+  .socials__logo--reddit {
+    width: 16px;
+    height: 16px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0 16px;
+  }
+
+  .product-card--1 {
+    background-image: url("../img/card-1.jpg");
+  }
+
+  .product-card--2 {
+    background-image: url("../img/card-1.jpg");
+  }
+
+  .product-card--3 {
+    background-image: url("../img/card-3.jpg");
+  }
+
+  .product-card--4 {
+    background-image: url("../img/card-4.jpg");
+  }
+
+  .product-card--5 {
+    background-image: url("../img/card-5.jpg");
+  }
+
+  .product-card--6 {
+    background-image: url("../img/card-6.jpg");
+  }
+
+  .product-card--7 {
+    background-image: url("../img/card-7.jpg");
+  }
+
+  .product-card--8 {
+    background-image: url("../img/card-8.jpg");
   }
 
   .modal__wrapper {
@@ -2147,52 +2505,6 @@ button,
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .title-block {
-    background-image: url("../img/bg-main-desktop@2x.jpg");
-  }
-
-  .benefits-block {
-    background-image: url("../img/bg-benefits-desktop@2x.jpg");
-  }
-
-  .product-card--1 {
-    background-image: url("../img/card-1-desktop@2x.jpg");
-  }
-
-  .product-card--2 {
-    background-image: url("../img/card-1-desktop@2x.jpg");
-  }
-
-  .product-card--3 {
-    background-image: url("../img/card-3-desktop@2x.jpg");
-  }
-
-  .product-card--4 {
-    background-image: url("../img/card-4-desktop@2x.jpg");
-  }
-
-  .product-card--5 {
-    background-image: url("../img/card-5-desktop@2x.jpg");
-  }
-
-  .product-card--6 {
-    background-image: url("../img/card-6-desktop@2x.jpg");
-  }
-
-  .product-card--7 {
-    background-image: url("../img/card-7-desktop@2x.jpg");
-  }
-
-  .product-card--8 {
-    background-image: url("../img/card-8-desktop@2x.jpg");
-  }
-
-  .form-block {
-    background-image: url("../img/bg-form-desktop@2x.jpg");
   }
 }
 

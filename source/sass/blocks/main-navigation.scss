@@ -6,6 +6,10 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 33px;
+
+  @media (max-width: 1023px) {
+    gap: 24px;
+  }
 }
 
 .main-navigation__link {
@@ -27,5 +31,10 @@
   &:focus {
     outline: 2px solid $grey-font;
     border-radius: 5px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 14px;
+    line-height: 17px;
   }
 }

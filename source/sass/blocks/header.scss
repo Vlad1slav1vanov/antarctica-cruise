@@ -5,12 +5,21 @@
   background-color: rgba(0, 0, 0, 0);;
   width: 100vw;
   padding: 35px 0;
+
+  @media (max-width: 1023px) {
+    padding: 30px 45px;
+  }
 }
 
 .header__wrapper {
   margin: 0 auto;
   width: 84.9%;
+  max-width: 1600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
 }

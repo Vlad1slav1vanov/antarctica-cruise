@@ -1,4 +1,7 @@
 .main-navigation {
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .main-navigation__list {

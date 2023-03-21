@@ -5,6 +5,10 @@
   @media (max-width: 1023px) {
     padding: 90px 0 95px 0;
   }
+
+  @media (max-width: 767px) {
+    padding: 55px 15px 85px 15px;
+  }
 }
 
 .description-block__wrapper {
@@ -20,6 +24,12 @@
     padding: 0 45px;
     gap: 30px;
     align-items: flex-start;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+    flex-direction: column;
+    gap: 35px;
   }
 }
 
@@ -59,6 +69,17 @@
     p {
       font-size: 16px;
       line-height: 24px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: auto;
+
+    h2 {
+      width: 190px;
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 17px;
     }
   }
 }

@@ -99,6 +99,16 @@
       padding: 28px 35px 35px 35px;
     }
   }
+
+  @media (max-width: 767px) {
+    width: 270px;
+    height: 386px;
+    padding: 340px 25px 25px 25px;
+
+    &:hover {
+      padding: 28px 25px;
+    }
+  }
 }
 
 .product-card--1 {

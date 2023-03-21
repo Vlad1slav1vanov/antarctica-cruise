@@ -53,6 +53,23 @@
       outline: 2px solid blue;
     }
   }
+
+  @media (max-width: 767px) {
+    min-width: auto;
+    width: 290px;
+    padding: 35px 30px 40px 30px;
+
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    button {
+      margin-top: -5px;
+    }
+  }
 }
 
 .feedback-form__checkbox-wrapper {
@@ -86,5 +103,17 @@
 
   input:focus + span {
     outline: 2px solid blue;
+  }
+
+  @media (max-width: 767px) {
+    gap: 8px;
+    label {
+      width: 155px;
+    }
+
+    span {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

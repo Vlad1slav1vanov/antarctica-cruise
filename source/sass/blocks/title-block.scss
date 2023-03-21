@@ -41,6 +41,22 @@
       line-height: 22px;
     }
   }
+
+  @media (max-width: 767px) {
+    padding: 175px 0 180px 0;
+    background-image: url('../img/bg-main.jpg');
+
+    h1 {
+      font-size: 36px;
+      line-height: 45px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      width: 199px;
+    }
+  }
 }
 
 .title-block__wrapper {
@@ -51,5 +67,9 @@
   @media (max-width: 1023px) {
     width: 100%;
     padding: 0 45px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 15px;
   }
 }

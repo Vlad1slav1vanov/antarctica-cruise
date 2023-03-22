@@ -15,8 +15,8 @@ const form = document.querySelector(".feedback-form");
 
 initPhoneInput(phoneParent);
 
-pageForm.addEventListener("submit", (evt) => {
-  const isValid = validator._validatePhoneInput(pagePhoneParent, pagePhoneInput);
+form.addEventListener("submit", (evt) => {
+  const isValid = validator._validatePhoneInput(phoneParent, phoneInput);
   if (!isValid) {
     evt.preventDefault();
     phoneInput.focus();
